@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jarvis Publishing Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Source+Sans+3:wght@400;600&display=swap">
+<style>
+/* Layout: one plain reading column, a legal page: title block, short numbered clauses (a real sequence), dated footer. */
+:root {
+  --bg: #f6f5f1; --fg: #22231f; --muted: #5f6258; --rule: #dcdad2; --accent: #2f5d50;
+  --display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #161815; --fg: #e6e6df; --muted: #a3a69b; --rule: #2e312b; --accent: #8cc5b2; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #161815; --fg: #e6e6df; --muted: #a3a69b; --rule: #2e312b; --accent: #8cc5b2; color-scheme: dark; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 16px/1.6 var(--body); margin: 0;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 64px; }
+main { max-width: 680px; margin: 0 auto; display: grid; gap: 28px; }
+header { display: grid; gap: 8px; border-bottom: 1px solid var(--rule); padding-bottom: 20px; }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 600; font-size: 34px; line-height: 1.15; margin: 0; text-wrap: balance; }
+h2 { font-family: var(--display); font-weight: 600; font-size: 20px; margin: 0; text-wrap: balance; }
+p, li { max-width: 65ch; margin: 0; }
+section { display: grid; gap: 10px; }
+ol { margin: 0; padding-left: 1.3em; display: grid; gap: 18px; }
+ol > li::marker { font-family: var(--display); color: var(--accent); font-weight: 600; }
+ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+code { font-size: 14px; overflow-wrap: anywhere; }
+a { color: var(--accent); }
+footer { color: var(--muted); font-size: 14px; border-top: 1px solid var(--rule); padding-top: 16px; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">Homepage, privacy policy and terms of service</span>
+    <h1>Jarvis Publishing</h1>
+    <p>Jarvis Publishing is a private tool that one person uses to upload their own finished short videos to their own YouTube channels. It isn't offered to the public, and nobody else signs in to it.</p>
+  </header>
+
+  <section>
+    <h2>Privacy policy</h2>
+    <ol>
+      <li><strong>What it accesses.</strong> When the channel owner connects a YouTube channel, the tool asks Google for permission to upload videos to that channel and to read the channel's basic details (its name and handle) so it can confirm it is posting to the right one.</li>
+      <li><strong>Where data is kept.</strong> The sign-in tokens Google returns are stored only on the owner's own computer, in the macOS Keychain. Video files and their titles, descriptions and schedules stay on that computer until they are uploaded.</li>
+      <li><strong>What it never does.</strong>
+        <ul>
+          <li>It doesn't sell, share or transfer any Google user data to anyone.</li>
+          <li>It doesn't use Google user data for advertising or to train AI models.</li>
+          <li>It doesn't read, change or delete other people's content, comments or subscribers.</li>
+        </ul>
+      </li>
+      <li><strong>Google API rules.</strong> Use of information received from Google APIs follows the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including its Limited Use requirements. YouTube use is also covered by the <a href="https://www.youtube.com/t/terms" rel="noopener">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.</li>
+      <li><strong>Removing access.</strong> Access can be removed at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Disconnecting a channel in the tool also deletes its stored tokens from the computer.</li>
+      <li><strong>Contact.</strong> Questions go to the support email shown on this app's Google sign-in screen.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Terms of service</h2>
+    <ol>
+      <li><strong>Who may use it.</strong> Only the channel owner uses this tool, for their own accounts. There are no other users and no sign-ups.</li>
+      <li><strong>What it does.</strong> It uploads videos the owner made to the owner's own YouTube, Instagram and TikTok accounts, including as drafts, and reads basic account details to confirm the right account. It does nothing on anyone else's account.</li>
+      <li><strong>Platform rules.</strong> All uploads follow each platform's own terms and community guidelines. The owner is responsible for the content they publish.</li>
+      <li><strong>No warranty.</strong> The tool is provided as is, for personal use, with no charge.</li>
+    </ol>
+  </section>
+
+  <footer>Last updated 6 November 2026.</footer>
+</main>
+</body>
+</html>
